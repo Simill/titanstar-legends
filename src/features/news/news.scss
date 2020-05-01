@@ -1,0 +1,53 @@
+@import '../shared/styles/variables.scss';
+
+.news {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $section-border-color;
+
+  &__header {
+    background-color: $section-header-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $section-padding;
+  }
+
+  &__header-title {
+    font-family: 'OpenSans-Semibold';
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &__author-time {
+    font-family: 'OpenSans-Regular';
+    font-size: 12px;
+    color: #bababa;
+  }
+
+  &__author-anchor {
+    color: #648fbc;
+    text-decoration: none;
+  }
+
+  &__content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: $section-padding;
+    background-image: url('../../assets/news-bg.png');
+  }
+
+  &__content {
+    text-align: start;
+    color: #cfcfcf;
+    font-size: 14px;
+    font-family: 'OpenSans-Regular';
+    padding-bottom: $section-padding;
+  }
+
+  &__read-more-button {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}

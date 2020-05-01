@@ -1,0 +1,10 @@
+@import '../../shared/styles/variables.scss';
+
+.nav-bar {
+  margin: $section-margin 0;
+  border: 1px solid $section-border-color;
+  height: 60px;
+  border-bottom: 4px solid #2b3942;
+  background-color: $section-header-background-color;
+  display: flex;
+}

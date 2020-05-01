@@ -1,0 +1,26 @@
+@import '../../shared/styles/variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $section-background-color;
+  border: 1px solid $section-border-color;
+  padding: 16px;
+
+  &__nav-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    & span {
+      color: #808082;
+
+      & > a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}

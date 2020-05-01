@@ -1,0 +1,22 @@
+@import '../button/button.scss';
+$icon-dimension: 27px;
+
+.social-button {
+  @extend .button;
+  background-image: url('../../../../assets/social-icons-sprite.png');
+  margin: 0 2px;
+  height: $icon-dimension;
+  width: $icon-dimension;
+
+  &--twitter {
+    background-position: 0;
+  }
+
+  &--facebook {
+    background-position: $icon-dimension * -1;
+  }
+
+  &--youtube {
+    background-position: $icon-dimension * -2;
+  }
+}
