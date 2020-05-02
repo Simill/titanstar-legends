@@ -1,9 +1,12 @@
+@import '../../styles/variables.scss';
+
 .button {
-  background: linear-gradient(#5c82a9, #4a6985);
+  background: linear-gradient($main-button-color, #4a6985);
   color: #ffffff;
   border: 1px solid #5b85ab;
   border-radius: 3px;
   font-size: 13px;
-  font-family: 'OpenSans-Semibold';
+  font-family: 'Open Sans';
+  font-weight: 600;
   cursor: pointer;
 }

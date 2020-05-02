@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid $section-border-color;
+  margin: $section-margin 0;
 
   &__header {
     background-color: $section-header-background-color;
@@ -14,13 +15,12 @@
   }
 
   &__header-title {
-    font-family: 'OpenSans-Semibold';
+    font-weight: 600;
     font-size: 20px;
     color: #ffffff;
   }
 
   &__author-time {
-    font-family: 'OpenSans-Regular';
     font-size: 12px;
     color: #bababa;
   }
@@ -42,7 +42,6 @@
     text-align: start;
     color: #cfcfcf;
     font-size: 14px;
-    font-family: 'OpenSans-Regular';
     padding-bottom: $section-padding;
   }
 

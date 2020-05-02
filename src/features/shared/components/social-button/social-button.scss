@@ -4,6 +4,7 @@ $icon-dimension: 27px;
 .social-button {
   @extend .button;
   background-image: url('../../../../assets/social-icons-sprite.png');
+  background-color: $main-button-color;
   margin: 0 2px;
   height: $icon-dimension;
   width: $icon-dimension;
