@@ -3,7 +3,7 @@
 .nav-bar {
   margin: $section-margin 0;
   border: 1px solid $section-border-color;
-  height: 60px;
+  height: $nav-bar-height;
   border-bottom: 4px solid #2b3942;
   background-color: $section-header-background-color;
   display: flex;

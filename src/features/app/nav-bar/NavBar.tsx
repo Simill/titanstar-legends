@@ -17,11 +17,11 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="nav-bar">
+    <nav className="nav-bar">
       {navItems.map((itemProps) => (
         <NavBarItem {...itemProps} key={itemProps.id} />
       ))}
-    </div>
+    </nav>
   );
 };
 

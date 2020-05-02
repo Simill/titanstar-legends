@@ -2,13 +2,14 @@
 $nav-icon-dimension: 23px;
 
 .nav-bar-item {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 8px;
   cursor: pointer;
   border: 1px solid $section-border-color;
+  position: relative;
 
   &:hover {
     background-color: #1b1c1e;
@@ -44,15 +45,20 @@ $nav-icon-dimension: 23px;
     z-index: 10;
     left: -10000em;
     display: flex;
-    align-self: flex-start;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
     background-color: #3d3d3d;
+    list-style-type: none;
+
+    // Putting this a little closer to the nav-bar-item so the menu doesn't collapse sometimes while navigating to sub-menu items
+    top: $nav-bar-height - 2;
   }
 
   // Use a wonky selector to show the sub-menu when hovering over the main nav item or the sub-menu.
   &:hover &__sub-menu,
   &:hover &__sub-menu:hover {
-    left: auto;
+    left: 0;
   }
 
   &__sub-nav-item {

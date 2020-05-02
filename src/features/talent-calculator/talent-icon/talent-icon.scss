@@ -14,7 +14,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   width: $icon-dimension;
   height: $icon-dimension;
   background-repeat: no-repeat;
-
+  cursor: pointer;
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
