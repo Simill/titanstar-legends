@@ -1,0 +1,26 @@
+@import '../../shared/styles/variables.scss';
+
+.talent-path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $section-margin;
+
+  &__title {
+    font-size: 13px;
+    color: #fff;
+    margin-right: 30px;
+  }
+
+  &__path {
+    width: 100px;
+    height: 13px;
+    background-color: #1b1c1e;
+    border: 1px solid #28292b;
+
+    &--isActive {
+      background-color: #333436;
+      border: 1px solid #414449;
+    }
+  }
+}

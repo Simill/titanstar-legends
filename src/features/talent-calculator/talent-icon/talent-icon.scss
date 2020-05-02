@@ -1,0 +1,94 @@
+$icon-dimension: 50px;
+$chevron-x-position: 0px;
+$silverware-x-position: $icon-dimension * 1;
+$cake-x-position: $icon-dimension * 2;
+$crown-x-position: $icon-dimension * 3;
+$boat-x-position: $icon-dimension * 4;
+$scuba-x-position: $icon-dimension * 5;
+$lightening-x-position: $icon-dimension * 6;
+$skull-x-position: $icon-dimension * 7;
+$is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
+
+.talent-icon {
+  background-image: url('../../../assets/talent-icons-sprite.png');
+  width: $icon-dimension;
+  height: $icon-dimension;
+  background-repeat: no-repeat;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to bottom, #4c4c4c, #444);
+
+  &--chevron {
+    background-position: $chevron-x-position (-$icon-dimension);
+
+    &.isActive {
+      background-position: $chevron-x-position 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--silverware {
+    background-position: (-$silverware-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$silverware-x-position) 0px;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--cake {
+    background-position: (-$cake-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$cake-x-position) 0px;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--crown {
+    background-position: (-$crown-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$crown-x-position) 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--boat {
+    background-position: (-$boat-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$boat-x-position) 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--scuba {
+    background-position: (-$scuba-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$scuba-x-position) 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--lightening {
+    background-position: (-$lightening-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$lightening-x-position) 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+
+  &--skull {
+    background-position: (-$skull-x-position) (-$icon-dimension);
+
+    &.isActive {
+      background-position: (-$skull-x-position) 0;
+      border-image-source: $is-active-border-gradient;
+    }
+  }
+}
