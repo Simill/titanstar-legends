@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Button from '../../shared/components/button/Button';
 import './search-bar.scss';
 
+/**
+ * A search bar. Searching does nothing right now, but the bar will be cleared when hitting search.
+ * @returns the search bar component.
+ */
 const SearchBar = () => {
   const [searchValue, updateSearchValue] = useState('');
 

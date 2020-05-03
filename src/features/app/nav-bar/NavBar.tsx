@@ -3,6 +3,10 @@ import './nav-bar.scss';
 import { INavBarItemProps } from '../nav-bar-item/INavBarProps';
 import NavBarItem from '../nav-bar-item/NavBarItem';
 
+/**
+ * Renders the app's nav bar.
+ * @returns - the nav bar component.
+ */
 const NavBar = () => {
   const navItems: INavBarItemProps[] = [
     {

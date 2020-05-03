@@ -2,6 +2,10 @@ import React from 'react';
 import './footer.scss';
 import SocialButton from '../../shared/components/social-button/SocialButton';
 
+/**
+ * The app's footer. This includes social media buttons and a mini-nav menu.
+ * @returns the footer component.
+ */
 const Footer = () => {
   return (
     <footer className="footer">

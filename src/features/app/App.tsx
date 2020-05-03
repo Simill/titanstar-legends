@@ -8,6 +8,10 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import NavBar from './nav-bar/NavBar';
 
+/**
+ * The main App component where the magic happens. This puts together the main skeleton of our app.
+ * @returns the App component.
+ */
 const App = () => {
   return (
     <div className="app">

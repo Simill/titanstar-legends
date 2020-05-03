@@ -8,6 +8,7 @@ import { ITalent } from '../../shared/interfaces/ITalent';
  * Constructs a talent path from a root talent.
  * While building the talent icons, a styled div will be rendered to connect the icons.
  * @param props - Props for building the talent path.
+ * @returns A talent path.
  */
 const TalentPath = (props: ITalentPathProps) => {
   const buildTalentPath = (talentID: string): JSX.Element => {

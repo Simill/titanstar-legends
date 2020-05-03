@@ -12,3 +12,5 @@ export const TALENT_PATH_DATA: ITalentPathData[] = [
 ];
 
 export const MAX_TALENT_POINTS = 6;
+
+export const DOWN_ARROW_UNICODE = '\u25bc';

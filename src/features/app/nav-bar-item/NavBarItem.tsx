@@ -1,6 +1,7 @@
 import React from 'react';
 import { INavBarItemProps } from './INavBarProps';
 import './nav-bar-item.scss';
+import { DOWN_ARROW_UNICODE } from '../../shared/constants';
 
 const getSubNavMenu = (props: INavBarItemProps) => {
   if (!props.subNavigationItems.length) return null;
@@ -15,8 +16,12 @@ const getSubNavMenu = (props: INavBarItemProps) => {
   );
 };
 
-const DOWN_ARROW_UNICODE = '\u25bc';
-
+/**
+ * An individual nav bar item. This renders the item's text and icon.
+ * If the item has a sub-nav menu, that is rendered below it after hovering over it.
+ * @param props - The nav bar item's props.
+ * @returns the nav bar item component.
+ */
 const NavBarItem = (props: INavBarItemProps) => (
   <li className="nav-bar-item">
     <div className={`nav-bar-item__icon nav-bar-item__icon--${props.id}`}></div>

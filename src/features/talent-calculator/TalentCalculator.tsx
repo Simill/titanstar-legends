@@ -3,6 +3,14 @@ import './talent-calculator.scss';
 import TalentPath from './talent-path/TalentPath';
 import { ITalentCalculatorProps } from './ITalentCalculatorProps';
 
+/**
+ * A calculator for talent points.
+ * The user may add talent points as long as the talent before it (if it exists) is active and the max number of talent points has not been met.
+ * The user may remove talent points, and any subsequent talent points will also be removed.
+ * The spent and max amount of talent points are displayed to the user beside the talent paths.
+ * @param props - Any talent data needed to render the paths.
+ * @returns The talent paths and talent calculators.
+ */
 const TalentCalculator = (props: ITalentCalculatorProps) => {
   const [pointsSpent, setTotalPoints] = useState(0);
 

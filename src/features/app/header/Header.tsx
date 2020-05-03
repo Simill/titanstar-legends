@@ -4,6 +4,10 @@ import SocialButton from '../../shared/components/social-button/SocialButton';
 import SearchBar from '../search-bar/SearchBar';
 import './header.scss';
 
+/**
+ * The app's header component. This includes the TitanStar Legends logo, social media buttons, and a search bar.
+ * @returns the app's header component.
+ */
 const Header = () => {
   return (
     <header className="header">

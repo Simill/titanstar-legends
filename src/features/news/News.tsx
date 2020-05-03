@@ -2,6 +2,11 @@ import React from 'react';
 import './news.scss';
 import Button from '../shared/components/button/Button';
 
+/**
+ * The News component. This contains the important news items to display to the user.
+ * The user can click on the author's name (though it does nothing right now)
+ * @returns the News component.
+ */
 const News = () => (
   <div className="news">
     <div className="news__header">
