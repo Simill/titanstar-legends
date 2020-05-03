@@ -3,7 +3,7 @@ import { ITalentIconProps } from './ITalentIcon';
 import './talent-icon.scss';
 
 const getIsActiveClass = (props: ITalentIconProps): string =>
-  props.isActive ? 'isActive' : '';
+  props.isActive ? 'active' : '';
 
 const TalentIcon = (props: ITalentIconProps) => {
   const onClickHandler = () => {

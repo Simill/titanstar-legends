@@ -23,7 +23,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--chevron {
     background-position: $chevron-x-position (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: $chevron-x-position 0;
       border-image-source: $is-active-border-gradient;
     }
@@ -32,7 +32,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--silverware {
     background-position: (-$silverware-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$silverware-x-position) 0px;
       border-image-source: $is-active-border-gradient;
     }
@@ -41,7 +41,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--cake {
     background-position: (-$cake-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$cake-x-position) 0px;
       border-image-source: $is-active-border-gradient;
     }
@@ -50,7 +50,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--crown {
     background-position: (-$crown-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$crown-x-position) 0;
       border-image-source: $is-active-border-gradient;
     }
@@ -59,7 +59,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--boat {
     background-position: (-$boat-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$boat-x-position) 0;
       border-image-source: $is-active-border-gradient;
     }
@@ -68,7 +68,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--scuba {
     background-position: (-$scuba-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$scuba-x-position) 0;
       border-image-source: $is-active-border-gradient;
     }
@@ -77,7 +77,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--lightening {
     background-position: (-$lightening-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$lightening-x-position) 0;
       border-image-source: $is-active-border-gradient;
     }
@@ -86,7 +86,7 @@ $is-active-border-gradient: linear-gradient(to bottom, #73adec, #395682);
   &--skull {
     background-position: (-$skull-x-position) (-$icon-dimension);
 
-    &.isActive {
+    &.active {
       background-position: (-$skull-x-position) 0;
       border-image-source: $is-active-border-gradient;
     }

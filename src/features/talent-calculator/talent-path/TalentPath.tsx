@@ -1,7 +1,6 @@
 import React from 'react';
 import { ITalentPathProps } from './ITalentPathProps';
 import './talent-path.scss';
-import talentsMap from '../../shared/data/talentsMap';
 import TalentIcon from '../talent-icon/TalentIcon';
 import { ITalent } from '../../shared/interfaces/ITalent';
 
@@ -12,7 +11,7 @@ import { ITalent } from '../../shared/interfaces/ITalent';
  */
 const TalentPath = (props: ITalentPathProps) => {
   const buildTalentPath = (talentID: string): JSX.Element => {
-    const talent = talentsMap[talentID];
+    const talent = props.talentsMap[talentID];
     let renderedPathOutput = (
       <TalentIcon
         talentID={talent.id}
@@ -38,7 +37,7 @@ const TalentPath = (props: ITalentPathProps) => {
     return (
       <div
         className={`talent-path__path ${
-          talent.isActive ? 'talent-path__path--isActive' : ''
+          talent.isActive ? 'talent-path__path--active' : ''
         }`}
       />
     );

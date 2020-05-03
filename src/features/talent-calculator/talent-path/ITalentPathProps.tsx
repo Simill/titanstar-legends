@@ -5,4 +5,5 @@ export interface ITalentPathProps {
   onHandleTalentAdd: (talentID: string) => void;
   onHandleTalentRemove: (talentID: string) => void;
   title: string;
+  talentsMap: { [id: string]: ITalent };
 }
